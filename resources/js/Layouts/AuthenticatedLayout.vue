@@ -5,7 +5,7 @@ import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
-import { Link } from '@inertiajs/vue3';
+import { Link } from '@inertiajs/inertia-vue3';
 
 const showingNavigationDropdown = ref(false);
 </script>
@@ -34,6 +34,9 @@ const showingNavigationDropdown = ref(false);
                                 </NavLink>
                                 <NavLink :href="route('items.index')" :active="route().current('items.index')">
                                     商品管理
+                                </NavLink>
+                                <NavLink :href="route('customers.index')" :active="route().current('customers.index')">
+                                    顧客管理
                                 </NavLink>
                             </div>
                         </div>
@@ -120,6 +123,9 @@ const showingNavigationDropdown = ref(false);
                         </ResponsiveNavLink>
                         <ResponsiveNavLink :href="route('items.index')" :active="route().current('items.index')">
                             商品管理
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('customers.index')" :active="route().current('customers.index')">
+                            顧客管理
                         </ResponsiveNavLink>
                     </div>
 
