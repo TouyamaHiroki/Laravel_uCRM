@@ -37,13 +37,13 @@ const searchCustomers = () => {
                         <div class="container px-5 py-8 mx-auto">
                           <FlashMessage />
                           <div class="lg:w-3/4 w-full mx-auto overflow-auto">
-                          <div class="flex my-4 ml-auto w-full mx-auto">
-                            <div>
-                              <input type="text" name="search" v-model="search">
-                              <button class="bg-blue-300 text-white py-2 px-2" @click="searchCustomers">検索</button> 
+                            <div class="flex my-4 ml-auto w-full mx-auto">
+                              <div>
+                                <input type="text" name="search" v-model="search">
+                                <button class="bg-blue-300 text-white py-2 px-2" @click="searchCustomers">検索</button> 
+                              </div>
+                              <Link :href="route('customers.create')" class="text-white bg-indigo-500 border-0 py-2 ml-auto px-6 focus:outline-none hover:bg-indigo-600 rounded" as="button">顧客登録</Link>
                             </div>
-                            <Link :href="route('customers.create')" class="text-white bg-indigo-500 border-0 py-2 ml-auto px-6 focus:outline-none hover:bg-indigo-600 rounded" as="button">顧客登録</Link>
-                          </div>
                             <table class="table-auto w-full text-left whitespace-no-wrap">
                               <thead>
                                 <tr>
